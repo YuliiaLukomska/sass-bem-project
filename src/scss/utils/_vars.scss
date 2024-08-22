@@ -1,0 +1,15 @@
+// Fonts
+$fontMain: 'Raleway', sans-serif;
+$fontAccent: 'Playfair Display', serif;
+$fontSecondary: 'Roboto', sans-serif;
+// Colors
+$colors: (
+  'primaryTextColor': #ffffff,
+  'accentTextColor': #d4c17f,
+  'bodyBg': #242b33,
+  'footerBg': #2d343c,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
